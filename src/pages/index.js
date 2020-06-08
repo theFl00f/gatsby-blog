@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Nav from '../components/nav'
+import Header from '../layouts/header'
 
 export default function Home() {
   return (
-    <div>
-      <Nav />
+    <Fragment>
+      <Header pageName='home'>
+        <Nav />
+      </Header>
       hello!
-    </div>
+    </Fragment>
   )
 }

@@ -1,0 +1,359 @@
+header.home {
+    background-image: unset;
+    position: static;
+    height: unset;
+
+    .wrapper:nth-child(2) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        @include lrg {
+            justify-content: center;
+            align-items: center;
+            align-content: flex-start;
+            height: unset;
+        }
+        @include med {
+            flex-flow: column-reverse;
+        }
+    }
+    .header-img-container {
+        background-color: white;
+        flex-basis: 39%;
+        display: flex;
+        position: relative;
+        top: 16px;
+        left: 3%;
+        min-width: 30%;
+        box-shadow: 16.5px 16.5px white;
+        @include lrg {
+            flex-basis: 30%;
+            left: 7.5%;
+            box-shadow: 12px 12px white;
+        }
+        @include med {
+            position: static;
+            margin: 3% 30% 0;
+        }
+        @include sm {
+            margin-top: 10%;
+        }
+    }
+    
+    .header-container {
+        position: relative;
+        bottom: 34px;
+        right: 2%;
+        @include lrg {
+            bottom: unset;
+            right: unset;   
+        }
+        @include med {
+            margin: 15% 0 10%;
+        }
+        img {
+            position: absolute;
+            bottom: 52%;
+            left: -10%;
+            max-width: 150px;
+            @media (max-width:1100px) {
+                bottom: 50%;
+                left: -12%;
+            }
+            @include med {
+                bottom: 43%;
+                left: -10%;
+            }
+            @media (max-width:575px) {
+                bottom: 44%;
+            }
+            @include sm {
+                max-width: 33%;
+                left: -8%;
+                bottom: 48%;
+            }
+            @include xs {
+                bottom: 50%;
+            }
+        }
+        h1 {
+            position: static;
+        }
+    }
+}
+
+.who-is {
+    .wrapper {
+        padding: 7.75% 10% 9.5% 0;
+        @include lrg {
+            text-align: center;
+            padding: 7.75% 5% 9.5%;
+        }
+        @include sm {
+            padding: 10% 5% 15%;
+        }
+        @include xs {
+            padding-bottom: 17.5%;
+        }
+    }
+    background-color: $white;
+    p {
+        padding: 2.75% 0 2.9%;
+        @include sm {
+            padding: 4% 0 6.5%;
+        }
+        @include xs {
+            padding-bottom: 12%;
+        }
+    }
+}
+
+.article-links {
+    background-color: white;
+    article {
+        display: flex;
+        justify-content: space-between;
+        @include med {
+            flex-direction: column;
+        }
+    }
+
+    .article-text-container {
+        flex-basis: 40.5%;
+        height: 100%;
+        @include lrg {
+            flex-basis: 44%;
+        }
+    }
+    .article-img-container {
+        flex-basis: 50%;
+        position: relative;
+    }
+    .article1 {
+        .article-text-container {
+            margin-top: 8%;
+            @include lrg {
+                margin-top: 5%;
+            }
+        }
+    }
+    .article2 {
+        text-align: right;
+        .article-text-container {
+            margin-top: 3.25%;
+            margin-bottom: 5%;
+            @include lrg {
+                margin-top: 4%;
+            }
+            @include med {
+                order: 1;
+                margin-top: 15%;
+            }
+            @include xs {
+                margin-top: 25%;
+                margin-bottom: 15%;
+            }
+        }
+    }
+    img {
+        z-index: 3;
+        position: relative;
+    }
+    .img1 {
+        bottom: 45px;
+        right: 0.97%;
+        @include lrg {
+            bottom: 30px;
+        }
+
+    }
+    .img1::after {
+        content: "";
+        position: absolute;
+        background-color: $secondary-color;
+        left: -30%;
+        right: -3.5%;
+        top: 5%;
+        bottom: -3%;
+        z-index: 2;
+        @include lrg {
+            bottom: 10%;
+        }
+        @include med {
+            bottom: -3%;
+            right: 3%;
+        }
+    }
+    .img2 {
+        top: 45px;
+        right: 0.97%;
+    }
+    .img2::after {
+        content: "";
+        position: absolute;
+        background-color: $primary-color;
+        right: -27%;
+        left: 3.5%;
+        top: 5%;
+        bottom: -3%;
+        z-index: 2;
+        @include lrg {
+            bottom: 11%;
+            right: -13%;
+        }
+        @include med {
+            bottom: -3%;
+            right: -6.5%;
+        }
+    }
+    p {
+        padding: 4.5% 0 6.5%;
+    }
+
+}
+
+.info {
+    background-color: $white;
+    padding: 7.5% 0 5%;
+    @include xs {
+        padding-bottom: 10%;
+    }
+    .wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        @include med {
+            justify-content: flex-end;
+            margin-right: 10%;
+        }
+
+    }
+    .info-container {
+        position: relative;
+        flex-basis: 39%;
+        padding: 2.25% 0;
+        @include med {
+            flex-basis: 80%;
+        }
+        @include xs {
+            flex-basis: 75%;
+            padding: 5% 0;
+        }
+    }
+    .icon-container {
+        background-color: $primary-color;
+        position: absolute;
+        height: 43px;
+        width: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: hidden;
+        border-radius: 50%;
+        left: -15%;
+        top: 30px;
+        @include lrg {
+            top: 22px;
+            left: -18%;
+        }
+        @include med {
+            top: 14%;
+            left: -13%;
+        }
+        @include sm {
+            top: 7.5%;
+            left: -15%;
+        }
+        @include xs {
+            left: -22%;
+        }
+    }
+    h3 {
+        padding: 3% 0 4.5%;
+        @include med {
+            padding: 3% 0 2%;
+        }
+    }
+}
+
+.full-bleed {
+    line-height: 0;
+    @include sm {
+        display: none;
+    }
+}
+
+.journey {
+    background-color: $white;
+    padding: 7% 0 6.25%;
+    @include sm {
+        padding: 4% 0 10%;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include med {
+            flex-direction: column;
+        }
+    }
+    .img-container {
+        min-width: 23.75%;
+        flex-basis: 23.75%;
+        position: relative;
+        bottom: 12px;
+        box-shadow: 15px 15px $primary-color;
+        display: flex;
+        @include lrg {
+            min-width: 28%;
+            flex-basis: 28%;
+            box-shadow: 12px 12px $primary-color;
+        }
+        @include med {
+            margin-bottom: 5%;
+        }
+        @include sm {
+            margin-bottom: 10%;
+        }
+        @include xs {
+            margin: 0 15% 10%;
+        }
+    }
+    article {
+        flex-basis: 66%;
+        @include med {
+            text-align: center;
+            max-width: 85%;
+        }
+    }
+    p {
+        padding: 4% 0 4.5%;
+        @include sm {
+            padding-bottom: 10%;
+        }
+    }
+
+}
+
+.gallery {
+    padding: 6.25% 0 5.75%;
+    background-color: white;
+    @include xs {
+        display: none;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        @include med {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .gallery-container {
+            flex-basis: 31.25%;
+            @include med {
+                padding: 2.5% 0;
+            }
+        }
+    }
+}

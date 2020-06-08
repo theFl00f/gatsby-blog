@@ -1,0 +1,40 @@
+form {
+    margin-top: 1.75%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    @include sm {
+        input:first-of-type {
+            margin-bottom: 2.5%;
+        }
+    }
+    input {
+        flex-basis: 49.25%;
+        min-width: 49.25%;
+        border: none;
+        padding: 3% 0 4% 4.75%;
+        @include sm {
+            flex-basis: 100%;
+            min-width: 100%;
+        }
+    }
+    .comment {
+        flex-basis: 100%;
+        min-width: 100%;
+        margin: 2.5% 0;
+        padding: 4.75% 0 27% 4.75%;
+        @include sm {
+            padding-bottom: 60%;
+            margin-bottom: 3%;
+        }
+    }
+
+    button {
+        flex-basis: 100%;
+    }
+    
+}
+
+.contact form {
+    margin-top: 0;
+}
