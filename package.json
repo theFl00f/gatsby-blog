@@ -17,9 +17,11 @@
   "dependencies": {
     "gatsby": "^2.22.15",
     "gatsby-plugin-sass": "^2.3.3",
+    "net": "^1.0.2",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "tls": "0.0.1"
   },
   "devDependencies": {
     "gh-pages": "^3.0.0",

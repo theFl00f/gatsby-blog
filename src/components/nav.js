@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import NavLink from './navLink';
 
 export default function Nav() {
     return (
@@ -8,31 +8,21 @@ export default function Nav() {
                     <li>
                         <a aria-hidden="true" href="#" title="Menu">&#9776;<span class="sr-only">Menu</span></a>
                         <ul class="nav">
-                            <li>
-                                <Link to="/">
-                                    <h5>home</h5>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/#about">
-                                    <h5>about</h5>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/">
-                                    <h3>sophie</h3>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/blog">
-                                    <h5>blog</h5>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/contact">
-                                    <h5>contact</h5>
-                                </Link>
-                            </li>
+                            <NavLink address='/'>                            
+                                <h5>home</h5>
+                            </NavLink>
+                            <NavLink address="/#about">
+                                <h5>about</h5>
+                            </NavLink>
+                            <NavLink address="/">
+                                <h3>sophie</h3>
+                            </NavLink>
+                            <NavLink address='/blog/'>
+                                <h5>blog</h5>
+                            </NavLink>
+                            <NavLink address="/contact/">
+                                <h5>contact</h5>
+                            </NavLink>
                         </ul>
                     </li>
                 </ul>
