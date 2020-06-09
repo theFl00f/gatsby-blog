@@ -1,45 +1,14 @@
 import React from 'react';
 import AboutSection from './aboutSection';
 import ArticleSection from './articleSection';
+import InfoSection from './infoSection';
 
 export default function IndexMain() {
     return (
         <main>
             <AboutSection />
-
             <ArticleSection />
-        <section class="info">
-            <div class="wrapper">
-                <div class="info-container">
-                    <div class="icon-container">
-                        <i aria-hidden="true" class="fas fa-image"></i>
-                    </div>
-                    <h3>photos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur architecto eius voluptates odit vitae vel consequatur temporibus numquam, quibusdam?</p>
-                </div>
-                <div class="info-container">
-                    <div class="icon-container">
-                        <i aria-hidden="true" class="fas fa-user"></i>
-                    </div>
-                    <h3>about</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui consequuntur, voluptate magnam, neque nobis rerum maxime, nemo inventore eos at necessitatibus.</p>
-                </div>
-                <div class="info-container">
-                    <div class="icon-container">
-                        <i aria-hidden="true" class="fas fa-desktop"></i>
-                    </div>
-                    <h3>blog</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia veritatis eius corrupti aspernatur voluptates optio numquam mollitia cupiditate dolores iusto!</p>
-                </div>
-                <div class="info-container">
-                    <div class="icon-container">
-                        <i aria-hidden="true" class="fas fa-phone"></i>
-                    </div>
-                    <h3>get in touch</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eum perferendis laborum saepe cupiditate earum adipisci inventore distinctio nisi quis quisquam.</p>
-                </div>
-            </div>
-        </section>
+            <InfoSection />
         {/* <section class="full-bleed">
             <img src="./assets/home-image-4.jpg" alt="rows of orange and blue seats">
         </section> */}

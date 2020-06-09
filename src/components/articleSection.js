@@ -2,6 +2,7 @@ import React from 'react';
 
 import articleImg1 from '../assets/home-image-2.jpg'
 import articleImg2 from '../assets/home-image-3.jpg'
+import Button from './button';
 
 export default function ArticleSection() {
     return (
@@ -14,22 +15,14 @@ export default function ArticleSection() {
                 <div class="article-text-container">
                     <h3>sophie's favourite things</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quaerat, dolor ut exercitationem libero id dignissimos quia facere unde. Hic aliquam animi esse maxime temporibus nemo numquam.</p>
-                    <button>
-                        <a href="#">
-                            read more
-                        </a>
-                    </button>
+                    <Button content='read more'/>
                 </div>
             </article>
             <article class="article2">
                 <div class="article-text-container">
                     <h3>where she's travelled</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veritatis natus sit laboriosam quam sequi commodi? Dolore est ipsam unde, recusandae velit, corrupti, et laborum quasi ut rerum provident enim!</p>
-                    <button>
-                        <a href="#">
-                            read more
-                        </a>
-                    </button>
+                    <Button content='read more'/>
                 </div>
                 <div class="article-img-container img2">
                     <img src={articleImg2} alt="a sandy beach with blue chairs and orange umbrellas."/>
