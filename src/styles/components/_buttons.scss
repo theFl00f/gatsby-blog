@@ -2,9 +2,9 @@ button {
     padding: 8px 22px;
     border: none;
     background-color: $primary-accent;
-    
-    :hover,
-    :focus-within {
+    cursor: pointer;
+    &:hover,
+    &:focus-within {
         color: white;
     }
 }

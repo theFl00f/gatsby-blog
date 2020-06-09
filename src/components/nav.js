@@ -1,5 +1,5 @@
 import React from 'react';
-import NavLink from './navLink';
+import NavLink from '../layouts/navLink';
 
 export default function Nav() {
     return (
