@@ -1,7 +1,11 @@
 .sidebar {
     background-color: $white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     main {
         padding: 6.25% 0;
+        flex-grow: 1;
         .wrapper {
             display: flex;
             justify-content: space-between;

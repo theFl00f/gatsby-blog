@@ -4,6 +4,7 @@ import Header from '../layouts/header';
 import HeaderContainer from '../components/headerContainer';
 import Sidebar from '../layouts/sidebar';
 import ContactMain from '../components/contactMain';
+import Footer from '../components/footer';
 
 export default function Contact() {
     return (
@@ -13,6 +14,7 @@ export default function Contact() {
                 <HeaderContainer content='get in touch'/>
             </Header>
             <ContactMain />
+            <Footer />
         </Sidebar>
     )
 }
