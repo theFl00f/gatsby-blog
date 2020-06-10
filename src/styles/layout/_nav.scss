@@ -17,7 +17,6 @@ header {
             > a {
                 display: none;
                 padding: 2%;
-                height: 100%;
                 &:hover,
                 &:focus-within {
                     padding-bottom: 0;
@@ -27,14 +26,14 @@ header {
                     width: 100%;
                     text-align: center;
                 }
-                @include sm {
-                    &:hover ul.nav,
-                    &:focus-within ul.nav {
-                        display: flex;
-                        height: 100%;
-                        transform: scaleY(1);
-                        opacity: 1;
-                    }
+            }
+            @include sm {
+                &:hover ul.nav,
+                &:focus-within ul.nav {
+                    height: unset;
+                    display: flex;
+                    transform: scaleY(1);
+                    opacity: 1;
                 }
             }
         }
